@@ -16,7 +16,7 @@ let module = (function () {
             let li = document.createElement('li');
             li.innerText = `${good.name}  ${good.price}  ${good.rate}`;
             ul.appendChild(li);
-        })
+        });
 
     }
 
@@ -24,28 +24,28 @@ let module = (function () {
         print : printGoods,
         strateg : stratege,
         goods : goods
-    }
+    };
 })();
 
 let sortName = {
     metod:function (arr) {
         arr.sort(function (a,b) {
             return (a.name>b.name)? 1:-1;
-        })
+        });
     }
 };
 let sortPrice= {
     metod:function (arr) {
         arr.sort(function (a,b) {
             return a.price-b.price;
-        })
+        });
     }
 };
 let sortRate= {
     metod:function (arr) {
         arr.sort(function (a,b) {
             return a.rate-b.rate;
-        })
+        });
     }
 };
 
